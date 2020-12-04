@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<lccdd xmlns:compact="http://www.lcsim.org/schemas/compact/1.0"
+       xmlns:xs="http://www.w3.org/2001/XMLSchema"
+       xs:noNamespaceSchemaLocation="http://www.lcsim.org/schemas/compact/1.0/compact.xsd">
+
+  <includes>
+    <gdmlFile  ref="cepc/CEPC_elements.xml"/>
+    <gdmlFile  ref="cepc/CEPC_materials.xml"/>
+  </includes>
+
+  <info name="cepc_det"
+        title="cepc detector"
+        author="Y.H"
+        url="no."
+        status="development"
+        version="V04">
+    <comment>the detector for cepc</comment>
+  </info>
+ 
+  <define>
+    <constant name="world_side" value="30000*mm"/>
+    <constant name="world_x" value="world_side"/>
+    <constant name="world_y" value="world_side"/>
+    <constant name="world_z" value="world_side"/>
+  </define>
+  <include ref="cepc/cepc_IDs.xml"/> 
+  <include ref="cepc/cepc_Display.xml"/>
+  <include ref="cepc/cepc_readouts.xml"/>
+  <include ref="cepc/cepc_Vertex.xml"/>
+  <include ref="cepc/cepc_FTD_test.xml"/>
+  <include ref="cepc/cepc_SIT_SET.xml"/>
+  <!--
+  <include ref="cepc/cepc_TPC_barrel.xml"/>
+  -->
+  <detectors>
+    <detector id="0" name="BeamPipe" type="cepc_beampipe" vis="red">
+      <beampipe/>
+      <tubs name="BeamPipeCylinder" rmin="14.0*mm" rmax="14.5*mm" dz="120.0*mm" material="Beryllium">
+	  <layer_material surface="representing" binning="binPhi,binZ" bins0="25" bins1="25"/>
+      </tubs>
+    </detector>
+    <detector id="1" name="Tracker_1" type="DD4hep_SubdetectorAssembly" vis="BlueVisTrans">
+      <composite name="Silicon_vertex_Barrel"/>
+      <composite name="ftd_endcap_pos1"/>
+      <composite name="ftd_endcap_neg1"/>
+<!--
+    </detector>
+    <detector id="2" name="Tracker_2" type="DD4hep_SubdetectorAssembly" vis="BlueVisTrans">
+      <composite name="Barrel_SIT_layer"/>
+      <composite name="ftd_endcap_pos2"/>
+      <composite name="ftd_endcap_neg2"/>
+    </detector>
+    <detector id="3" name="Tracker_3" type="DD4hep_SubdetectorAssembly" vis="BlueVisTrans">
+      <composite name="Barrel_SIT_layer_2"/>
+      <composite name="ftd_endcap_pos3"/>
+      <composite name="ftd_endcap_neg3"/>
+    </detector>
+-->
+<!--
+    <detector id="4" name="TPC_" type="DD4hep_SubdetectorAssembly" vis="Invisible">
+      <composite name="TPC"/>
+    </detector>
+
+    <detector id="5" name="ETD" type="DD4hep_SubdetectorAssembly" vis="BlueVisTrans">
+      <composite name="Barrel_SET_layer"/>
+      <composite name="etd_endcap_pos"/>
+      <composite name="etd_endcap_neg"/>
+    </detector>
+  -->
+
+
+  </detectors>
+</lccdd>

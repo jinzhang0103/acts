@@ -3,6 +3,7 @@ add_library(
   FatrasDigitizationBase.cpp
   FatrasEvgenBase.cpp
   FatrasMain.cpp
+  ReconTruthBase.cpp
   FatrasSimulationBase.cpp)
 target_include_directories(
   ActsExamplesFatrasCommon
@@ -17,6 +18,10 @@ target_link_libraries(
     ActsExamplesMagneticField ActsExamplesDetectorsCommon
     ActsExamplesFatras ActsExamplesDigitization
     ActsExamplesIoCsv ActsExamplesIoRoot
+	ActsExamplesFitting
+	ActsExamplesTruthTracking
+    ActsExamplesIoPerformance
+    ActsExamplesTrackFinding
     Boost::program_options)
 
 install(

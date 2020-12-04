@@ -1,0 +1,31 @@
+<detectors>
+  <detector id="SIT_ID_1" name="Barrel_SIT_layer" type="cepc_common" readout="SITCollection" vis="invisible">
+    <dimensions rmin="158.9*mm" rmax="173.*mm" dz="371.4*mm"/>
+    <barrel_layer name="SIT_layer_1" inner_r="158.*mm" outer_r="172.9*mm" r="160*mm" z="371.3*mm" gap="0.0*mm" phi_gap="0.01" phi_tilt="0.08" in_layer_gap="0.2*mm" layers_gap="0.0*mm" vis="invisible">
+	  <layer_material surface="representing" binning="binPhi,binZ" bins0="25" bins1="25"/>
+      <module vis="invisible">
+        <!--module_component name="Sensor" x1="20.*mm" x2="20.*mm" thickness="1.3399*mm" length="37.13*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.*mm" z_offset="0.*mm" material="SiliconOxide" vis="blue" sensitive="true"/--> 
+        <module_component name="Sensor" x1="20.*mm" x2="20.*mm" thickness="0.6699*mm" length="37.13*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.*mm" z_offset="0.*mm" material="SiliconOxide" vis="blue" sensitive="true"/> 
+      </module> 
+    </barrel_layer>
+  </detector>
+
+  <detector id="SIT_ID_2" name="Barrel_SIT_layer_2" type="cepc_common" readout="SITCollection" vis="invisible">
+    <dimensions rmin="309.9*mm" rmax="330.*mm" dz="665.*mm"/>
+    <barrel_layer name="SIT_layer_2" inner_r="310.*mm" outer_r="329.9*mm" r="310.*mm" z="665.*mm" gap="0.0*mm" phi_gap="0.01" phi_tilt="0.08" in_layer_gap="0.2*mm" layers_gap="0.0*mm" vis="invisible">
+	  <layer_material surface="representing" binning="binPhi,binZ" bins0="25" bins1="25"/>
+      <module vis="invisible">
+        <module_component name="Sensor" x1="20.*mm" x2="20.*mm" thickness="0.6699*mm" length="66.5*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.*mm" z_offset="0.*mm" material="SiliconOxide" vis="blue" sensitive="true"/> 
+      </module> 
+    </barrel_layer>
+  </detector>
+  <detector id="SET_ID" name="Barrel_SET_layer" type="cepc_common" readout="SETCollection" vis="invisible">
+    <dimensions rmin="1830.9*mm" rmax="1850.*mm" dz="2350.1*mm"/>
+    <barrel_layer name="SET_layer" inner_r="1831.*mm" outer_r="1849.9*mm" r="1831.*mm" z="2350.*mm" gap="0.0*mm" phi_gap="0.00" phi_tilt="0.08" in_layer_gap="0.2*mm" layers_gap="0.0*mm" vis="invisible">
+	  <layer_material surface="representing" binning="binPhi,binZ" bins0="25" bins1="25"/>
+      <module vis="invisible">
+        <module_component name="Sensor" x1="50.*mm" x2="50.*mm" thickness="0.6699*mm" length="100.*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.*mm" z_offset="0.*mm" material="SiliconOxide" vis="blue" sensitive="true"/> 
+      </module> 
+    </barrel_layer>
+  </detector>
+</detectors>

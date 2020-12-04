@@ -12,6 +12,12 @@ add_library(
   src/OpenDataDetector/ODDPixelEndcap_geo.cpp
   src/OpenDataDetector/ODDStripBarrel_geo.cpp
   src/OpenDataDetector/ODDStripEndcap_geo.cpp
+  src/CepcDetector/CEPC_assambleHelper.hpp
+  src/CepcDetector/CEPC_Common.cpp
+  src/CepcDetector/CEPC_beampipe.cpp
+  src/CepcDetector/CEPC_layouthelper.hpp
+  src/CepcDetector/CEPC_service.hpp
+  src/CepcDetector/CEPC_TPC_barrel.cpp
   src/Calorimeter/Calorimeter_barrel.cpp
   src/TestTracker/AirTube_geo.cpp
   src/TestTracker/Barrel_geo.cpp

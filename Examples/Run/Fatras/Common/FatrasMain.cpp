@@ -29,6 +29,7 @@
 #include "FatrasDigitizationBase.hpp"
 #include "FatrasEvgenBase.hpp"
 #include "FatrasSimulationBase.hpp"
+#include "ReconTruthBase.hpp"
 
 int ActsExamples::fatrasMain(
     int argc, char* argv[],
@@ -89,7 +90,9 @@ int ActsExamples::fatrasMain(
 
   // (C) DIGITIZATION
   // Setup the digitization
-  setupDigitization(vm, sequencer, randomNumberSvc, tGeometry);
+  //setupDigitization(vm, sequencer, randomNumberSvc, tGeometry);
+
+  setupReconTruth(vm, sequencer, tGeometry);
 
   return sequencer.run();
 }

@@ -1,0 +1,25 @@
+<define>
+  <constant name="Beampipe_ID" value="0"/> 
+  <!-- Correction from going from inner circle to outer circle -->
+
+  <constant name="Vt_ID" value="100"/>
+  <constant name="FTD_ID_N1" value="102"/>
+  <constant name="FTD_ID_P1" value="104"/>
+
+  <constant name="SIT_ID_1" value="200"/>
+  <constant name="FTD_ID_N2" value="202"/>
+  <constant name="FTD_ID_P2" value="204"/>
+
+  <constant name="SIT_ID_2" value="300"/>
+  <constant name="FTD_ID_N3" value="302"/>
+  <constant name="FTD_ID_P3" value="304"/>
+
+  <constant name="SET_ID" value="400"/>
+  <constant name="ETD_ID_N" value="402"/>
+  <constant name="ETD_ID_P" value="404"/>
+
+  <constant name="TPC_ID" value="500"/>
+  <constant name="TPC_GAS_ID" value="501"/>
+
+  </define>
+

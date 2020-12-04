@@ -1,0 +1,42 @@
+<lccdd>
+  <define>
+  </define>
+  <readouts>
+    <!--SET readout --> 
+    <readout name="SETCollection">
+      <segmentation type="CartesianGridXY" grid_size_x="0.05*mm" grid_size_y="0.05*mm"/>
+      <!--id>system:4,layer:3,stave:5,module:5,sensor:6,x:32:-16,y:-16</id-->
+      <id>system:4,layer:3,stave:9,module:6,sensor:6,x:32:-16,y:-16</id>
+    </readout>
+    <!-- SIT readout--> 
+    <readout name="SITCollection">
+      <segmentation type="CartesianGridXY" grid_size_x="0.05*mm" grid_size_y="0.05*mm"/>
+      <!--id>system:4,layer:3,stave:5,module:5,sensor:6,x:32:-16,y:-16</id-->
+      <id>system:4,layer:3,stave:9,module:6,sensor:6,x:32:-16,y:-16</id>
+    </readout>
+    <!--TPC barrel readout--> 
+    <readout name="TPC_barrel_readouts">
+      <segmentation type="CartesianGridXY" grid_size_x="5*mm" grid_size_y="5*mm"/>
+      <id>system:3,layer:6,module:19,x:32:-16,y:-16</id>
+    </readout>
+    <readout name="TPC_barrel_cylinder_readouts">
+    <!--
+      <segmentation type="CartesianGridXY" grid_size_x="5*mm" grid_size_y="5*mm"/>
+      <id>system:3,layer:5,sub_layer:3,x:25,y:25</id>
+    -->
+      <segmentation type="ProjectiveCylinder" theta_bins="50" phi_bins="50"/>
+      <id>system:3,layer:5,sub_layer:10,theta:32:-16,phi:-16</id>
+    </readout>
+    <!--vertex readout-->
+    <readout name="SVtCollection">
+      <segmentation type="CartesianGridXY" grid_size_x="0.05*mm" grid_size_y="0.05*mm"/>
+      <!--id>system:4,layer:3,stave:10,module:5,sensor:6,x:16,y:16</id-->
+      <id>system:4,layer:3,stave:10,module:5,sensor:6,x:32:-16,y:-16</id>
+    </readout>
+    <readout name="EndCap_readouts">
+      <segmentation type="CartesianGridXY" grid_size_x="0.05*mm" grid_size_y="0.05*mm"/>
+      <!--id>system:4,disk:4,ring:3,module:5,sensor:6,x:32:-16,y:-16</id-->
+      <id>system:4,disk:3,ring:3,module:16,sensor:6,x:32:-16,y:-16</id>
+    </readout>
+  </readouts>
+</lccdd>

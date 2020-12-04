@@ -1,0 +1,155 @@
+<detectors>
+  <detector id="FTD_ID_N1" name="ftd_endcap_neg1" type="cepc_common" readout="EndCap_readouts" vis="invisible">
+    <dimensions rmin="38.9*mm" rmax="152.0*mm" dz="180.*mm" z="-295.65*mm" vis="invisible"/>
+    <endcap_disk name="Endcap_1" inner_r="39.*mm" outer_r="151.9*mm" z="75.65*mm" dz="10.0*mm" vis="invisible">
+	<layer_material surface="representing" binning="binPhi,binR" bins0="25" bins1="25"/>
+      <module name="Endcap_module" vis="invisible">
+        <module_component name="Sensor" x1="30.1*mm" x2="40.1*mm" thickness="0.515375*mm" length="40.0*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true">
+        </module_component> 
+      </module>
+      <ring usingModule="Endcap_module" inner_r="39.1*mm" outer_r="76.7*mm" r="59.1*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="76.8*mm" outer_r="114.43*mm" r="95.6*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.02" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="114.5*mm" outer_r="151.8*mm" r="132.1*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.02" vis="invisible"/>
+    </endcap_disk>
+
+    <endcap_disk name="Endcap_2" inner_r="49.5*mm" outer_r="151.9*mm" z="-75.65*mm" dz="10.0*mm" vis="invisible">
+	  <layer_material surface="representing" binning="binPhi,binR" bins0="25" bins1="25"/>
+      <module name="Endcap_module" vis="invisible">
+        <module_component name="Sensor" x1="30.1*mm" x2="40.1*mm" thickness="0.515375*mm" length="35.0*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true">
+        </module_component> 
+      </module>
+      <ring usingModule="Endcap_module" inner_r="49.6*mm" outer_r="83.73*mm" r="67.1*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="83.74*mm" outer_r="117.87*mm" r="100.8*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.02" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="117.87*mm" outer_r="151.8*mm" r="134.3*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.02" vis="invisible"/>
+    </endcap_disk>
+  </detector>
+  <detector id="FTD_ID_N2" name="ftd_endcap_neg2" type="cepc_common" readout="EndCap_readouts" vis="invisible">
+    <dimensions rmin="70.*mm" rmax="299.0*mm" dz="21.*mm" z="-644.9*mm" vis="invisible"/>
+    <endcap_disk name="Endcap_1" inner_r="70.1*mm" outer_r="298.9*mm" z="0.*mm" dz="20.*mm" vis="invisible">
+	<layer_material surface="representing" binning="binPhi,binR" bins0="25" bins1="25"/>
+      <module name="Endcap_module" vis="invisible">
+        <module_component name="Sensor" x1="30.1*mm" x2="50.1*mm" thickness="0.6699*mm" length="60.*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true"/>
+      </module>
+      <ring usingModule="Endcap_module" inner_r="70.1*mm" outer_r="127.3*mm" r="100.1*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="127.31*mm" outer_r="184.5*mm" r="155.9*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="184.51*mm" outer_r="241.7*mm" r="213.1*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="241.71*mm" outer_r="298.9*mm" r="268.9*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+    </endcap_disk>
+  </detector>
+  
+  <detector id="FTD_ID_N3" name="ftd_endcap_neg3" type="cepc_common" readout="EndCap_readouts" vis="invisible">
+    <dimensions rmin="79.*mm" rmax="309.1*mm" dz="220.*mm" z="-951.75*mm" vis="invisible"/>
+    <endcap_disk name="Endcap_1" inner_r="79.1*mm" outer_r="309.0*mm" z="105.75*mm" dz="20.*mm" vis="invisible">
+	  <layer_material surface="representing" binning="binPhi,binR" bins0="25" bins1="25"/>
+      <module name="Endcap_module" vis="invisible">
+        <module_component name="Sensor" x1="30.1*mm" x2="50.1*mm" thickness="0.6699*mm" length="60.*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true"/>
+      </module>
+      <ring usingModule="Endcap_module" inner_r="79.3*mm" outer_r="136.7*mm" r="109.3*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="136.8*mm" outer_r="194.2*mm" r="165.5*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="194.3*mm" outer_r="251.7*mm" r="223.*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="251.71*mm" outer_r="309.0*mm" r="279.*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+    </endcap_disk>
+    <endcap_disk name="Endcap_2" inner_r="92.6*mm" outer_r="309.0*mm" z="-105.75*mm" dz="20.*mm" vis="invisible">
+	  <layer_material surface="representing" binning="binPhi,binR" bins0="25" bins1="25"/>
+      <module name="Endcap_module" vis="invisible">
+        <module_component name="Sensor" x1="30.1*mm" x2="50.1*mm" thickness="0.6699*mm" length="60.*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true"/>
+      </module>
+      <ring usingModule="Endcap_module" inner_r="92.7*mm" outer_r="146.7*mm" r="122.7*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="146.71*mm" outer_r="200.7*mm" r="173.7*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="200.71*mm" outer_r="254.7*mm" r="227.7*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="254.71*mm" outer_r="309.0*mm" r="279.*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+    </endcap_disk>
+  </detector>
+  <detector id="ETD_ID_N" name="etd_endcap_neg" type="cepc_common" readout="EndCap_readouts" vis="invisible">
+    <dimensions rmin="419.2*mm" rmax="1822.8*mm" dz="10.*mm" z="-2420.*mm" vis="invisible"/>
+    <endcap_disk name="ETD_encap_1" inner_r="419.3*mm" outer_r="1822.7*mm" z="0.*mm" dz="10.*mm" vis="invisible">
+	  <layer_material surface="representing" binning="binPhi,binR" bins0="25" bins1="25"/>
+      <module name="Endcap_module" vis="invisible">
+        <module_component name="Sensor" x1="50.1*mm" x2="70.1*mm" thickness="0.6699*mm" length="281.*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true"/>
+      </module>
+      <ring usingModule="Endcap_module" inner_r="419.3*mm" outer_r="699.98*mm" r="559.8*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="699.99*mm" outer_r="980.67*mm" r="840.33*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="980.68*mm" outer_r="1261.36*mm" r="1121.02*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="1261.37*mm" outer_r="1542.35*mm" r="1401.86*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.0" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="1542.36*mm" outer_r="1822.7*mm" r="1682.2*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.0" vis="invisible"/>
+    </endcap_disk>
+  </detector>
+
+  <detector id="FTD_ID_P1" name="ftd_endcap_pos1" type="cepc_common" readout="EndCap_readouts" vis="invisible">
+    <dimensions rmin="38.9*mm" rmax="152.0*mm" dz="180.1*mm" z="295.65*mm" vis="invisible"/>
+
+    <endcap_disk name="Endcap_1" inner_r="39.*mm" outer_r="151.9*mm" z="-75.65*mm" dz="10.0*mm" vis="invisible">
+	  <layer_material surface="representing" binning="binPhi,binR" bins0="25" bins1="25"/>
+      <module name="Endcap_module" vis="invisible">
+        <module_component name="Sensor" x1="30.1*mm" x2="40.1*mm" thickness="0.515375*mm" length="40.0*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true">
+        </module_component> 
+      </module>
+      <ring usingModule="Endcap_module" inner_r="39.1*mm" outer_r="76.7*mm" r="59.1*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="SeeThrough"/>
+      <ring usingModule="Endcap_module" inner_r="76.8*mm" outer_r="114.43*mm" r="95.6*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.02" vis="SeeThrough"/>
+      <ring usingModule="Endcap_module" inner_r="114.5*mm" outer_r="152.13*mm" r="132.1*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.02" vis="SeeThrough"/>
+    </endcap_disk>
+
+    <endcap_disk name="Endcap_2" inner_r="49.5*mm" outer_r="151.9*mm" z="75.65*mm" dz="10.0*mm" vis="invisible">
+	  <layer_material surface="representing" binning="binPhi,binR" bins0="25" bins1="25"/>
+      <module name="Endcap_module" vis="invisible">
+        <module_component name="Sensor" x1="30.1*mm" x2="40.1*mm" thickness="0.515375*mm" length="35.0*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true">
+        </module_component> 
+      </module>
+      <ring usingModule="Endcap_module" inner_r="49.6*mm" outer_r="83.73*mm" r="67.1*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="83.74*mm" outer_r="117.87*mm" r="100.8*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.02" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="117.87*mm" outer_r="151.8*mm" r="134.3*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.02" vis="invisible"/>
+    </endcap_disk>
+  </detector>
+  <detector id="FTD_ID_P2" name="ftd_endcap_pos2" type="cepc_common" readout="EndCap_readouts" vis="invisible">
+    <dimensions rmin="70.*mm" rmax="299.0*mm" dz="21.*mm" z="644.9*mm" vis="invisible"/>
+    <endcap_disk name="Endcap_1" inner_r="70.1*mm" outer_r="298.9*mm" z="0.*mm" dz="20.*mm" vis="invisible">
+	  <layer_material surface="representing" binning="binPhi,binR" bins0="25" bins1="25"/>
+      <module name="Endcap_module" vis="invisible">
+        <module_component name="Sensor" x1="30.1*mm" x2="50.1*mm" thickness="0.6699*mm" length="60.*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true"/>
+      </module>
+      <ring usingModule="Endcap_module" inner_r="70.1*mm" outer_r="127.3*mm" r="100.1*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="127.31*mm" outer_r="184.5*mm" r="155.9*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="184.51*mm" outer_r="241.7*mm" r="213.1*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="241.71*mm" outer_r="298.9*mm" r="268.9*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+    </endcap_disk>
+  </detector>
+  
+  <detector id="FTD_ID_P3" name="ftd_endcap_pos3" type="cepc_common" readout="EndCap_readouts" vis="invisible">
+    <dimensions rmin="79.*mm" rmax="309.1*mm" dz="220.*mm" z="951.75*mm" vis="invisible"/>
+    <endcap_disk name="Endcap_1" inner_r="79.1*mm" outer_r="309.0*mm" z="-105.75*mm" dz="20.*mm" vis="invisible">
+	  <layer_material surface="representing" binning="binPhi,binR" bins0="25" bins1="25"/>
+      <module name="Endcap_module" vis="invisible">
+        <module_component name="Sensor" x1="30.1*mm" x2="50.1*mm" thickness="0.6699*mm" length="60.*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true"/>
+      </module>
+      <ring usingModule="Endcap_module" inner_r="79.3*mm" outer_r="136.7*mm" r="109.3*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="136.8*mm" outer_r="194.2*mm" r="165.5*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="194.3*mm" outer_r="251.7*mm" r="223.*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="251.71*mm" outer_r="309.0*mm" r="279.*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+    </endcap_disk>
+    <endcap_disk name="Endcap_2" inner_r="92.6*mm" outer_r="309.0*mm" z="105.75*mm" dz="20.*mm" vis="invisible">
+	  <layer_material surface="representing" binning="binPhi,binR" bins0="25" bins1="25"/>
+      <module name="Endcap_module" vis="invisible">
+        <module_component name="Sensor" x1="30.1*mm" x2="50.1*mm" thickness="0.6699*mm" length="60.*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true"/>
+      </module>
+      <ring usingModule="Endcap_module" inner_r="92.7*mm" outer_r="146.7*mm" r="122.7*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="146.71*mm" outer_r="200.7*mm" r="173.7*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="200.71*mm" outer_r="254.7*mm" r="227.7*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="254.71*mm" outer_r="309.0*mm" r="279.*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+    </endcap_disk>
+  </detector>
+
+  <detector id="ETD_ID_P" name="etd_endcap_pos" type="cepc_common" readout="EndCap_readouts" vis="invisible">
+    <dimensions rmin="419.2*mm" rmax="1822.8*mm" dz="10.*mm" z="2420.*mm" vis="invisible"/>
+    <endcap_disk name="ETD_encap_1" inner_r="419.3*mm" outer_r="1822.7*mm" z="0.*mm" dz="10.*mm" vis="invisible">
+	  <layer_material surface="representing" binning="binPhi,binR" bins0="25" bins1="25"/>
+      <module name="Endcap_module" vis="invisible">
+        <module_component name="Sensor" x1="50.1*mm" x2="70.1*mm" thickness="0.6699*mm" length="281.*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true"/>
+      </module>
+      <ring usingModule="Endcap_module" inner_r="419.3*mm" outer_r="699.98*mm" r="559.8*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="699.99*mm" outer_r="980.67*mm" r="840.33*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="980.68*mm" outer_r="1261.36*mm" r="1121.02*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.05" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="1261.37*mm" outer_r="1542.35*mm" r="1401.86*mm" z_offset="-2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.0" vis="invisible"/>
+      <ring usingModule="Endcap_module" inner_r="1542.36*mm" outer_r="1822.7*mm" r="1682.2*mm" z_offset="2.0*mm" phi_start="0" phi_end="-1" in_layer_gap="1.0*mm" layers_gap="0.0*mm" phi_gap="0.0" vis="invisible"/>
+    </endcap_disk>
+  </detector>
+</detectors>

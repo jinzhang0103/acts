@@ -1,0 +1,21 @@
+<detectors>
+  <detector id="TPC_ID" name="TPC" type="cepc_TPC_barrel_cylinder" readout="TPC_barrel_cylinder_readouts">
+    <dimensions rmin="331.0*mm" rmax="1840.0*mm" dz="2340.0*mm"  vis="invisible"/><!--defining the whole TPC volume-->
+	<!--
+    <layer name="TPC_Inner_wall" rmin="375.3*mm" rmax="395.3*mm" material="TPC_endplate_mix" vis="grey" number="1.0" has_thin_layer="0"/>
+	-->
+    <!--defining layers' size, number of layers wanted to add and fill the layer with TPC gas-->
+    <layer name="TPC_GAS" rmin="400.1*mm" rmax="1767.9*mm" material="TDR_gas" vis="red" number="220.0" has_thin_layer="1"> 
+	<thin_layer_conf vis="blue">
+	  <layer_material surface="representing" binning="binPhi,binZ" bins0="40" bins1="25"/>
+        </thin_layer_conf>
+	  <!--
+      <module width="30.0*mm" length="2300.0*mm" thickness="0.1*mm" material="Vacuum" vis="blue" sensitive="true"/>
+	  -->
+    </layer>
+	<!--
+    <layer name="TPC_Outer_wall" rmin="1770.0*mm" rmax="1791.9*mm" material="TPC_endplate_mix" vis="grey" number="1.0" has_thin_layer="0"/>
+	-->
+  </detector>
+</detectors>
+
